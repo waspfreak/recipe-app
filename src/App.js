@@ -7,6 +7,7 @@ import Header from './components/Header';
 import Recipes from './components/Recipes';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
+
 import { faStroopwafel } from '@fortawesome/free-solid-svg-icons';
 library.add(faStroopwafel)
 
@@ -35,8 +36,6 @@ class App extends Component {
     e.preventDefault();
     const api_call = await fetch(`http://cors-anywhere.herokuapp.com/https://www.food2fork.com/api/search?key=${API_KEY}&q=${recipeName}";
 `);
-
-
 
       const data = await api_call.json();
       this.setState({recipes: data.recipes});

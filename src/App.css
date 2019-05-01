@@ -21,7 +21,13 @@
 
 .App-search-container{
   border-bottom: 1px solid #ffb800;
-  margin-bottom: 2%;
+  margin-bottom: 0.75rem;
+  min-height: 13vh;
+  justify-content: center;
+  display: flex;
+  align-content: center;
+  align-items: center;
+
 }
 .App-search {
   min-height: 10vh;
